@@ -1,5 +1,6 @@
 # ExplainThisError GitHub Action
 
+<<<<<<< HEAD
 Analyze failing build, test, or deployment logs using [ExplainThisError](https://explainthiserror.com).  
 This action sends error text to the ExplainThisError API and returns structured root-cause explanations, fixes, suggested commands, and documentation links.
 
@@ -203,3 +204,21 @@ The JSON structure is consistent with the web app’s `/analyze` endpoint.
 
 MIT © 2025 ExplainThisError  
 Author: [Alan El Dios](https://github.com/alaneldios)
+=======
+Analyze failing logs and CI errors using [ExplainThisError](https://explainthiserror.com). The action posts a root-cause analysis with fixes, writes a step summary, and optionally comments on pull requests.
+
+## Inputs
+
+- `error` **required** – Error text or log snippet.
+- `api_key` **required** – CI bearer key. Store as a repository secret.
+- `api_url` **required** – Default: `https://api.explainthiserror.com/ci/analyze`.
+- `comment_pr` optional – Post a PR comment when on `pull_request` (default: `true`).
+- `fail_on_api_error` optional – Fail the step if the API call fails (default: `false`).
+
+## Outputs
+
+- `json` – Raw JSON response.
+- `root_cause_short`
+- `root_cause_detail`
+
+>>>>>>> a910bdffd4d60b05e28f4a1e46f75b54785397c2
