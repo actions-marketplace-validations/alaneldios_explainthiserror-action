@@ -76,7 +76,7 @@ async function run(): Promise<void> {
     }
 
     // Important: undici's fetch types make res.json() -> unknown. Cast it.
-    const data = await res.json();
+    const data = await res.json() as CIResponse;
     core.info(`ExplainThisError raw response: ${JSON.stringify(data)}`);
 
     // Outputs
