@@ -202,4 +202,4 @@ The JSON structure is consistent with the web app’s `/analyze` endpoint.
 ## 📄 License
 
 MIT © 2025 ExplainThisError  
-Author: [Alan El Dios](https://github.com/alaneldios)
+Author: [Alan Rodriguez](https://github.com/alaneldios)
